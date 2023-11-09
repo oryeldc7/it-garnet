@@ -1,0 +1,117 @@
+/* Color Theme Swatches in Hex 
+#CC3A67
+#161A59
+#101240
+#0A0B26
+#0ABFBF
+*/
+
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ---------------Utility Classes--------------- */
+  .container{
+    margin:auto;
+    padding:40px;
+  }
+
+  /* ---------------Global Styles----------------- */
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: darkseagreen;
+}
+
+main{
+  background-color: yellowgreen;
+  width: 80vw;
+  /* Long form */
+  margin-top:40px;
+  margin-right:auto;
+  margin-bottom:40px;
+  margin-left:auto;
+  /* 4 Value Shorthand T,R,B,L */
+  margin:40px auto 40px auto 
+  /* 2 Value Shorthand T/B, L/R*/
+  margin:40px auto;
+  border:2px solid #0ABFBF;
+ border-radius:4px;
+}
+
+header.primary{
+  background-color:lightgray;
+  background-image: url("https://puypuy3.files.wordpress.com/2023/08/flag-of-the-mreh-2023.png?w=1024");
+  /* Local Path
+    background-image: url("../img/bg_1.png")
+  */  
+  background-size:cover;
+  background-repeat:no-repeat;
+  padding:65px; 
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  border-bottom:3px solid #104d73;
+}
+
+header.primary .hgroup{
+  width:70%;
+}
+
+.hgroup h1, .hgroup hw {
+  margin:0;
+}
+
+header.primary .hgroup h1 a{
+  color:red;
+  text-decoration:none;
+  text-shadow:1 px 1px red;
+  font: size 2.5rem;
+}
+
+header.primary .hgroup h2{
+  color:red;
+  text-shadow:1px 1px black;
+  font-size:1.4;
+  line-height:1.2;
+}
+
+header.primary nav {
+  width:30%;
+  margin:0;
+}
+
+header.priamry nav ul{
+  list-style-type:none;
+  margin:0;
+}
+
+header.primary nav ul li{
+  margin-bottom:10px;
+}
+
+header.primary nav a{
+  color:chocolate;
+  text-decoration:none;
+  background-color:rgba(red, green, blue, alpha);
+  display:block;
+  padding: 10px;
+  border-radius: 20px 0;
+  border: 1px solid purple;
+  border-right: 11px solid gold;
+  text-align:right;
+}
+
+#content h2, #content h3{
+  color:purple;
+  border-left:7.5px solid chocolate;
+  border-radius:15px 0;
+  padding:7.5px;
+}
