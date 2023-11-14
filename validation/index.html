@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <head>
-        <link rel="stylesheet" type="text/css" href="assets/CSS/styles.css">
-    </head>
+    
 <h2>New Patient Registration</h2>
 <style>
-    /* Add some margin between each div */
+    
     div {
         margin-bottom: 3px;
     }
     form label {
-        font-weight: bold; /* Makes labels within the form bold */
+        font-weight: bold; 
     }
     p.form-instruction {
-        font-weight: bold; /* Makes the form instruction text bold */
+        font-weight: bold; 
     }
 </style>
 
@@ -57,7 +55,6 @@
             <input type="radio" name="Sex" value="N">
             <span class="checkmark"></span> N/A 
         </label>
-    </form>
     </div>
 
     <div class="form-group">
@@ -83,7 +80,7 @@
     </div>
 
     
-    <div class="form-group">
+    
     <label>Marital Status:</label>
     <select id="MaritalStatus" name="MaritalStatus" required>
         <option value="S">Single</option>
@@ -92,7 +89,7 @@
         <option value="L">Legally Separated</option>
         <option value="W">Widowed</option>
     </select>
-    </div>
+    
 
     <div class="form-group">
         <label for="Address" class="bold-label">Address:</label>
@@ -104,10 +101,10 @@
         <label for="CityStateZip">City/State/Zip:</label>
         <input type="text" id="City" name="City" size="20" maxlength="30" required>
         <select id="State" name="State" required>
-            <!-- Options for states -->
+            
             <option value="">Select a State</option>
             <option value="AR">Arkansas</option>
-            <!-- Add options for other states -->
+            
         </select>
         <input type="text" id="Zip" name="Zip" size="5" maxlength="5" required>
     </div>
@@ -128,8 +125,9 @@
     </div>
 
     <hr>
-    
 
     <button type="submit">Submit Patient Form</button>
+</form>
+
 </body>
 </html>
