@@ -1,73 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link href="assets/css/style.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
 </head>
 <body>
     
-<h2>New Patient Registration</h2>
+    <h2>New Patient Registration</h2>
 
-<p class="form-instruction" >Please fill out the form below:</p>
+    <p class="form-instruction">Please fill out the form below:</p>
 
-<form action="https://brucebauer.info/assets/ITEC3650/datadump.php" method="post">
+    <form id="PatientForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" method="post">
 
-
-    
-    <label for="FirstName" class="formlabel">First Name: </label>
-    <input type="text" id="FirstName" name="FirstName" size="30" maxlength="30"
-              data-rule-required="true"  data-msg-required="First Name is Required" >
-    <label for="FirstName" class="error"></label>
-    
+        <div>
+            <label for="FirstName" class="formlabel">First Name: </label>
+            <input type="text" id="FirstName" name="FirstName" size="30" maxlength="30"
+                  data-rule-required="true"  data-msg-required="First Name is Required" >
+            <label for="FirstName" class="error"></label>
+        </div>
     
     <div>
         <label class="formlabel" for=""MiddleInitial">Middle Initial:</label>
         <input type="text" id="MiddleInitial" name="MiddleInitial" size="1" maxlength="1">
-    </div>
 
-    
+    </div>
         <label class="formlabel" for="LastName">Last Name:</label>
         <input type="text" id="LastName" size="30" maxlength="30" 
         data-rule-required="true"  data-msg-required="Last Name is Required" >
-<label for="LastName" class="error"></label>
+    <label for="LastName" class="error"></label>
     </div>
 
     <div class="form-group">
         <label class="formlabel" for="Email">Email:</label>
         <input type="email" id="Email" name="Email" size="30" maxlength="30" required
-    </div>
+              data-rule-required="true"  data-msg-required="Email is Required"
+              data-rule-email="true"  data-msg-email="Enter a valid Email address">
 
     <div class="form-group">
-    <label class="formlabel">Sex: </label>
-    <label for="Male"><input type="radio" name="M" id="Chevrolet" value="M">Male</label>
-    <label for="Female"><input type="radio" name="F" id="Ford" value="F">Female</label>
-    <label for="N/A"><input type="radio" name="N" id="Dodge" value="N">N/A</label>
+        <label class="formlabel">Sex: </label>
+        <label for="Male"><input type="radio" name="Sex" id="Male" value="M" required>Male</label>
+        <label for="Female"><input type="radio" name="Sex" id="Female" value="F" required>Female</label>
+        <label for="N/A"><input type="radio" name="Sex" id="N/A" value="N" required>N/A</label>
     </div>
 
     <div class="form-group">
         <label class="formlabel" for="Birthday">Birthday:</label>
-        <input type=""text" id="Birthday" size="8" maxlength="8" required>
+        <input type="text" id="Birthday" name="Birthday" required>
     </div>
 
     <div class="form-group">
         <label class="formlabel" for="Height">Height (inches):</label>
         <input type="text" id="Height" name="Height" size="3" maxlength="3" required
+              data-rule-required="true"  data-msg-required="Height is Required"
+              data-rule-number="true"  data-msg-number="Enter a valid number"
+              data-rule-min="12"  data-msg-min="Minimum height is 12 inches"
+              data-rule-max="120"  data-msg-max="Maximum height is 120 inches">
     </div>
 
     <div class="form-group">
         <label class="formlabel" for="Weight">Weight (pounds):</label>
         <input type="text" id="Weight" name="Weight" size="3" maxlength="3" required
+              data-rule-required="true"  data-msg-required="Weight is Required"
+              data-rule-number="true"  data-msg-number="Enter a valid number"
+              data-rule-min="10"  data-msg-min="Minimum weight is 10 pounds"
+              data-rule-max="500"  data-msg-max="Maximum weight is 500 pounds">
     </div>
 
     <hr>
 
     <div class="form-group">
         <label class="formlabel" for="PhoneNumber">Phone Number:</label>
-        <input type="tel" id="PhoneNumber" name="PhoneNumber" size="14" maxlength="14" required>
+        <input type="tel" id="PhoneNumber" name="PhoneNumber" size="14" maxlength="14" required
+              data-rule-required="true"  data-msg-required="Phone Number is Required"
+              data-rule-usphone="true"  data-msg-usphone="Enter a valid US phone number">
     </div>
 
     
     <label class="formlabel">Marital Status:</label>
     <select id="MaritalStatus" name="MaritalStatus" required>
+        <option value="">Select Marital Status</option>
         <option value="S">Single</option>
         <option value="M">Married</option>
         <option value="D">Divorce</option>
@@ -98,9 +111,9 @@
 
     <div class="form-group">
         <label class="formlabel" for="Medications">Taking Medications:</label>
-        <input type="radio" id="YesMedications" name="Medications" value="Y">
+        <input type="radio" id="YesMedications" name="Medications" value="Y" required>
         <label for="YesMedications">Yes</label>
-        <input type="radio" id="NoMedications" name="Medications" value="N">
+        <input type="radio" id="NoMedications" name="Medications" value="N" required>
         <label for="NoMedications">No</label>
     </div>
 
@@ -113,6 +126,13 @@
 
     <button type="submit">Submit Patient Form</button>
 </form>
+<script>
+    $(document).ready(function () {
+        $("#PatientForm").validate({
+            // Add rules and messages as needed
+        });
+    });
+</script>
 
 </body>
 </html>
