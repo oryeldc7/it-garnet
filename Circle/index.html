@@ -43,24 +43,24 @@
         <input type="submit" value="Clear" id="btnClear">
     </form>
 
-    <!-- Script tag for the JavaScript code -->
+    
     <script>
-        // Function to calculate diameter
+        
         function calcDiameter(radius) {
             return 2 * radius;
         }
 
-        // Function to calculate circumference
+        
         function calcCircumference(radius) {
             return 2 * Math.PI * radius;
         }
 
-        // Function to calculate area
+        
         function calcArea(radius) {
             return Math.PI * radius * radius;
         }
 
-        // Function to clear form
+        
         function clearForm() {
             document.getElementById('radius').value = '';
             document.getElementById('diameter').textContent = '';
@@ -69,39 +69,39 @@
             document.getElementById('radiuserror').textContent = '';
         }
 
-        // jQuery document ready function
+        
         $(document).ready(function() {
-            // Validate form
+            
             $("#CircleForm").validate();
 
-            // Calculate button click event
+            
             $('#btnSubmit').click(function(event) {
-                event.preventDefault(); // Prevent form submission
+                event.preventDefault(); 
                 
-                // Get radius value and convert to float
+                
                 var radiusStr = $('#radius').val();
                 var radius = parseFloat(radiusStr);
 
-                // Validate radius value
+                
                 if (!isNaN(radius) && radius > 0) {
-                    // Calculate diameter, circumference, and area
+                    
                     var diameter = calcDiameter(radius);
                     var circumference = calcCircumference(radius);
                     var area = calcArea(radius);
 
-                    // Display results
+                    
                     $('#diameter').text(diameter.toFixed(2));
                     $('#circumference').text(circumference.toFixed(2));
                     $('#area').text(area.toFixed(2));
                 } else {
-                    // Show error if radius is invalid
+                    
                     $('#radiuserror').text('Invalid radius. Please enter a positive number.');
                 }
             });
 
-            // Clear button click event
+            
             $('#btnClear').click(function(event) {
-                event.preventDefault(); // Prevent form submission
+                event.preventDefault(); 
                 clearForm();
             });
         });
