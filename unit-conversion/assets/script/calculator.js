@@ -1,34 +1,33 @@
-function convertUnits() {
-    var FromValue = document.getElementById('FromValue').value;
-    var FromUnit = document.getElementById('FromUnit').value;
-    var ToUnit = document.getElementById('ToUnit').value;
+function calculate() {
+    if ($("#myform").valid()) {
+        var fromValue = $("#FromValue").val();
+        var fromUnits = $("input[name='FromUnit']:checked").map(function() { return this.value; }).get();
+        var toUnits = $("input[name='ToUnit']:checked").map(function() { return this.value; }).get();
+        var url = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
+        var data = {
+            FromValue: fromValue,
+            FromUnit: fromUnits.join(","),
+            ToUnit: toUnits.join(",")
+        };
 
-    // AJAX call to unitsconversion.php
-    $.ajax({
-        url: 'https://brucebauer.info/assets/ITEC3650/unitsconversion.php',
-        type: 'GET',
-        data: {
-            FromValue: FromValue,
-            FromUnit: FromUnit,
-            ToUnit: ToUnit
-        },
-        success: function (response) {
-            // Display the result in the Result span
-            document.getElementById('Result').innerText = response;
-        },
-        error: function (xhr, status, error) {
-            console.error('Error:', error);
-        }
-    });
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            success: function(response) {
+                $("#Result").text(response);
+            },
+            error: function(xhr, status, error) {
+                console.log("Error: " + error);
+            }
+        });
+    }
 }
 
 function clearform() {
-    // Clear all inputs, error messages, and results
-    document.getElementById('FromValue').value = '';
-    document.getElementById('FromUnit').value = '';
-    document.getElementById('ToUnit').value = '';
-    document.getElementById('Result').innerText = '';
-    document.getElementById('FromValueMsg').innerText = '';
-    document.getElementById('FromUnitMsg').innerText = '';
-    document.getElementById('ToUnitMsg').innerText = '';
+    $("#FromValue").val("");
+    $("input[name='FromUnit']").prop("checked", false);
+    $("input[name='ToUnit']").prop("checked", false);
+    $("#Result").text("");
+    $(".error").text("");
 }
