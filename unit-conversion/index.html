@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="JavaScript Units Converter">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Your Name">
+    <title>JavaScript Units Converter</title>
+    <link rel="stylesheet" type="text/css" href="assets/style/calculator.css">
+</head>
+<body>
+<form id="myform">
+    <div class="formcontainer">
+        <h1>Units Converter</h1>
+        <fieldset id="detail">
+            <legend>Unit Conversion</legend>  
+            <br>
+            
+            <label class="formlabel" for="FromValue">From Value: </label>
+            <input type="text" id="FromValue" name="FromValue" size="15" maxlength="15"
+                    data-rule-required="true"  data-msg-required="From Value is Required" 
+                    data-rule-number="true" data-msg-number="From Value must be a Number">
+            <label for="FromValue" class="error" id="FromValueMsg"></label>
+            <br><br>
+
+            <label class="formlabel">From Unit: </label>
+            <label for="cm">Centimeters
+                <input type="checkbox" id="cm" name="FromUnit" value="cm" 
+                        data-rule-required="true" data-msg-required="From Unit is Required">
+            </label>
+            <label for="m">Meters
+                <input type="checkbox" id="m" name="FromUnit" value="m">
+            </label>
+            <label for="km">Kilometers
+                <input type="checkbox" id="km" name="FromUnit" value="km">
+            </label>
+            <label for="in">Inches
+                <input type="checkbox" id="in" name="FromUnit" value="in">
+            </label>
+            <label for="ft">Feet
+                <input type="checkbox" id="ft" name="FromUnit" value="ft">
+            </label>
+            <label for="yd">Yards
+                <input type="checkbox" id="yd" name="FromUnit" value="yd">
+            </label>
+            <label for="mi">Miles
+                <input type="checkbox" id="mi" name="FromUnit" value="mi">
+            </label>
+            <label for="FromUnit" class="error" id="FromUnitMsg"></label>
+            <br><br>
+
+            <label class="formlabel">To Unit: </label>
+            <label for="cm">Centimeters
+                <input type="checkbox" id="cm" name="ToUnit" value="cm" 
+                        data-rule-required="true" data-msg-required="To Unit is Required">
+            </label>
+            <label for="m">Meters
+                <input type="checkbox" id="m" name="ToUnit" value="m">
+            </label>
+            <label for="km">Kilometers
+                <input type="checkbox" id="km" name="ToUnit" value="km">
+            </label>
+            <label for="in">Inches
+                <input type="checkbox" id="in" name="ToUnit" value="in">
+            </label>
+            <label for="ft">Feet
+                <input type="checkbox" id="ft" name="ToUnit" value="ft">
+            </label>
+            <label for="yd">Yards
+                <input type="checkbox" id="yd" name="ToUnit" value="yd">
+            </label>
+            <label for="mi">Miles
+                <input type="checkbox" id="mi" name="ToUnit" value="mi">
+            </label>
+            <label for="ToUnit" class="error" id="ToUnitMsg"></label>
+            <br><br>
+
+            <label class="formlabel">Result: </label>
+            <span id="Result"></span>
+            <br><br>
+
+            <input type="button" value="Calculate" name="Calculate" onclick="convertUnits();">
+            <input type="button" value="Clear" name="Clear" onclick="clearform();">
+
+        </fieldset>
+    </div>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="assets/scripts/calculator.js"></script>
+</body>
+</html>
