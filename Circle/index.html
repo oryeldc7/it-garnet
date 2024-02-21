@@ -2,26 +2,12 @@
 <html lang="en">
 <head>
     <title>Circle Calculations</title>
-    <meta charset ="utf-8"> 
+    <meta charset="utf-8"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 
-<!-- The following should be a file in the "style" folder -->
-    <style>
-    .formlabel {
-        display: inline-block;
-        width: 200px;
-        text-align: right;
-        padding: 5px;
-        font-weight: bold;
-    }
-
-    .error {
-        color: red;
-        padding-left: 5px;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css"
 </head>
 
 <body>
@@ -44,67 +30,6 @@
     </form>
 
     
-    <script>
-        
-        function calcDiameter(radius) {
-            return 2 * radius;
-        }
-
-        
-        function calcCircumference(radius) {
-            return 2 * Math.PI * radius;
-        }
-
-        
-        function calcArea(radius) {
-            return Math.PI * radius * radius;
-        }
-
-        
-        function clearForm() {
-            document.getElementById('radius').value = '';
-            document.getElementById('diameter').textContent = '';
-            document.getElementById('circumference').textContent = '';
-            document.getElementById('area').textContent = '';
-            document.getElementById('radiuserror').textContent = '';
-        }
-
-        
-        $(document).ready(function() {
-            
-            $("#CircleForm").validate();
-
-            
-            $('#btnSubmit').click(function(event) {
-                event.preventDefault(); 
-                
-                
-                var radiusStr = $('#radius').val();
-                var radius = parseFloat(radiusStr);
-
-                
-                if (!isNaN(radius) && radius > 0) {
-                    
-                    var diameter = calcDiameter(radius);
-                    var circumference = calcCircumference(radius);
-                    var area = calcArea(radius);
-
-                    
-                    $('#diameter').text(diameter.toFixed(2));
-                    $('#circumference').text(circumference.toFixed(2));
-                    $('#area').text(area.toFixed(2));
-                } else {
-                    
-                    $('#radiuserror').text('Invalid radius. Please enter a positive number.');
-                }
-            });
-
-            
-            $('#btnClear').click(function(event) {
-                event.preventDefault(); 
-                clearForm();
-            });
-        });
-    </script>
+    <script src="assets/script/circle.js"></script>
 </body>
 </html>
