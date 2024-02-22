@@ -1,210 +1,179 @@
-/* Color Theme Swatches in Hex 
-#CC3A67
-#161A59
-#101240
-#0A0B26
-#0ABFBF
-*/
+/* Color Theme Swatches in Hex */
+/* #CC3A67 */
+/* #161A59 */
+/* #101240 */
+/* #0A0B26 */
+/* #0ABFBF */
 
 /* ---------------Box Sizing----------------- */
 
 html {
     box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
-  /* ---------------Utility Classes--------------- */
-  .container{
-    margin:auto;
-    padding:40px;
-  }
+/* ---------------Utility Classes--------------- */
+.container {
+    margin: auto;
+    padding: 40px;
+}
 
-  /* ---------------Responsive Images--------------- */
+/* ---------------Responsive Images--------------- */
 
-  img{
-    max-width:100%;
-    height:auto;
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-  }
-
-  /* ---------------Global Styles----------------- */
+/* ---------------Global Styles----------------- */
 
 body {
     font-family: 'Carter One', monospace;
     background-color: darkseagreen;
 }
 
-main{
-  background-color: yellowgreen;
-  width: 80vw;
-  /* Long form */
-  margin-top:40px;
-  margin-right:auto;
-  margin-bottom:40px;
-  margin-left:auto;
-  /* 4 Value Shorthand T,R,B,L */
-  margin:40px auto 40px auto 
-  /* 2 Value Shorthand T/B, L/R*/
-  margin:40px auto;
-  border:2px solid #0ABFBF;
- border-radius:4px;
+main {
+    background-color: yellowgreen;
+    width: 80vw;
+    /* Long form */
+    margin: 40px auto 40px auto;
+    border: 2px solid #0ABFBF;
+    border-radius: 4px;
 }
 
 header.primary {
-  background-color: #60967e;
-  background-image: url("../images/IMG_20240208_114214819_HDR-EDIT.jpg"), url("../images/IMG_20240208_111823989_HDR.jpg");
-  background-size: 50% 100%, cover;
-  background-position: left, center;
-  background-repeat: no-repeat;
+    background-color: #60967e;
+    background-image: url("../images/IMG_20240208_114214819_HDR-EDIT.jpg"), url("../images/IMG_20240208_111823989_HDR.jpg");
+    background-size: 50% 100%, cover;
+    background-position: left, center;
+    background-repeat: no-repeat;
 }
 
-
-
-
-
-
-
-
-  /* Local Path
-    background-image: url("../img/bg_1.png")
-  */  
-  background-size:cover;
-  background-repeat:no-repeat;
-  padding:65px; 
-  display:flex;
-  flex-direction:row;
-  justify-content:flex-start;
-  border-bottom:3px solid #104d73;
-}
-
-header.primary .hgroup{
-  width:70%;
+header.primary .hgroup {
+    width: 70%;
 }
 
 .hgroup h1, .hgroup hw {
-  margin:0;
+    margin: 0;
 }
 
-header.primary .hgroup h1 a{
-  color: rgb(35, 78, 35);
-  text-decoration:none;
-  text-shadow:1 px 1px red;
-  font-size: 3.5rem;
-  
+header.primary .hgroup h1 a {
+    color: rgb(35, 78, 35);
+    text-decoration: none;
+    text-shadow: 1px 1px yellowgreen;
+    font-size: 3.1rem;
 }
 
-header.primary .hgroup h2{
-  color:rgb(35, 78, 35);
-  text-shadow:1px 1px black;
-  font-size:1.4;
-  line-height:1.2;
+header.primary .hgroup h2 {
+    color: yellowgreen;
+    text-shadow: 1px 1px rgb(35, 78, 35);
+    font-size: 1.4;
+    line-height: 1.2;
 }
 
 header.primary nav {
-  width:30%;
-  margin:0;
+    width: 30%;
+    margin: 0;
 }
 
-header.priamry nav ul{
-  list-style-type:none;
-  margin:0;
+header.priamry nav ul {
+    list-style-type: none;
+    margin: 0;
 }
 
-header.primary nav ul li{
-  margin-bottom:10px;
+header.primary nav ul li {
+    margin-bottom: 10px;
 }
 
-header.primary nav a{
-  color:lightgreen;
-  text-decoration:none;
-  background-color:green;
-  display:block;
-  padding: 10px;
-  border-radius: 20px 0;
-  border: 1px solid purple;
-  border-right: 11px solid gold;
-  text-align:right;
+header.primary nav a {
+    color: lightgreen;
+    text-decoration: none;
+    background-color: green;
+    display: block;
+    padding: 10px;
+    border-radius: 20px 0;
+    border: 1px solid purple;
+    border-right: 11px solid gold;
+    text-align: right;
 }
 
-#content h2, #content h3{
-  color:purple;
-  border-left:7.5px solid chocolate;
-  border-radius:15px 0;
-  padding:7.5px;
+#content h2, #content h3 {
+    color: purple;
+    border-left: 7.5px solid chocolate;
+    border-radius: 15px 0;
+    padding: 7.5px;
 }
 
 #blog {
-  background: rgb(34,193,195);
- background: linear-gradient(4deg, rgba(34,193,195,1) 0%, rgba(16,77,115,1) 100%);
-   padding:20px 0;
-   border-top:6px double #0a96a6;
-   border-bottom:6px double #0a96a6;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(4deg, rgba(34, 193, 195, 1) 0%, rgba(16, 77, 115, 1) 100%);
+    padding: 20px 0;
+    border-top: 6px double #0a96a6;
+    border-bottom: 6px double #0a96a6;
 }
 
-#blog h2{
-  color: gold;
-  text-shadow: 2px 2px #000000;
-  font: size 2.2rem;
-  margin-left:20px;
+#blog h2 {
+    color: gold;
+    text-shadow: 2px 2px #000000;
+    font-size: 2.2rem;
+    margin-left: 20px;
 }
 
-article.post{
-  background-color: yellow;
-  margin: 20px;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas: 
-  "figure header"
-  "figure post-content"
-  "figure footer";
-  grid-gap:20px;
+article.post {
+    background-color: yellow;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "figure header"
+    "figure post-content"
+    "figure footer";
+    grid-gap: 20px;
 }
 
-article.post figure{
-  grid-area:figure;
-  margin:0;
-}
-article.post header{
-  grid-area:header;
-}
-article.post .post-content{
-  grid-area:post-content;
-}
-article.post .post-meta{
-  grid-area:footer;
+article.post figure {
+    grid-area: figure;
+    margin: 0;
 }
 
-aside .container{
-  display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  grid-gap:20px;
+article.post header {
+    grid-area: header;
 }
 
-aside .widget:first-of-type{
-  border-right:1px dotted #104d73
-  padding-right:20px; 
+article.post .post-content {
+    grid-area: post-content;
 }
 
-#colophone{
-  text-align: center;
-  background-image: url("https://assets.codepen.io/7248/bg_1.png");
-  padding:20px;
-  color:#ffffff;
+article.post .post-meta {
+    grid-area: footer;
+}
+
+aside .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+aside .widget:first-of-type {
+    border-right: 1px dotted #104d73;
+    padding-right: 20px;
+}
+
+#colophone {
+    text-align: center;
+    background-image: url("https://assets.codepen.io/7248/bg_1.png");
+    padding: 20px;
+    color: #ffffff;
 }
 
 header.primary .hgroup .logo {
-  width: 200px;
-  height: 200px;
-  float: right;
-  margin-right: 10px;
-  margin-top: 145px; /* Add some space between the logo and the top of the header */
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: -450px; 
+    margin-top: 200px; 
 }
-
-
-
-  
