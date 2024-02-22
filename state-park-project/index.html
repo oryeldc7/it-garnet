@@ -1,96 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>State Park Project</title>
-  <meta name="robots" content="noindex">
-  <meta charset="UTF-8" />
-  <meta name="description" content="Keyword rich narrative on site purpose" />
-  <meta name="author" content="Auriel Del Carmen" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> <!-- Add your own Font -->
-  <link rel="stylesheet" href="assets/style.css" />
-</head>
-
-<body>
-  <header role="banner" class="primary">
-    <h1><a href="index.html">Plum Bayou Archaeological State Park</a></h1>
-    <h2>Learn More</h2>
-    <nav role="navigation">
-      <ul>
-        <li><a href="#">Home Page</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">FAQs/Activities</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="content" class="container">
-    <h2>About</h2>
-    <p>Formerly Toltec Mounds Archeological State Park, Plum Bayou is one of four National Historic Landmarks in the Arkansas State Park system.</p>
-    <p>This park interprets the largest and most complex mound site in the state. It also offers the rare opportunity to see archeological research at work.</p>
-    <p>This site was a ceremonial ground for prehistoric Native Americans and stands today as an important and fascinating piece of history.</p>
-  </section>
-  <section id="articles" class="container">
-    <article class="post">
-      <header>
-        <figure>
-          <img src="https://res.cloudinary.com/miles-extranet-dev/image/upload/w_800,h_480,c_fill,q_60/ArkansasSP/account_photos/48/fc758cc7e945851de823bafe09a7970c_Toltec_SP_Aerial_102015_ACH_0928_crop" alt="Placeholder" />
-          <figcaption>Aerial view of Plum Bayou Mounds</figcaption>
-        </figure>
-        <h2> <a href="#" rel="bookmark" title="link to this post">History</a> </h2>
+  <head>
+    <title>IT Minor - CSS Demo</title>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Keyword rich narrative on site purpose" />
+    <meta name="author" content="Auriel Del Carmen" />
+    <link href="assets/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    />
+  </head>
+  <body>
+    <main>
+      <header role="banner" class="primary container">
+        <div class="hgroup">
+          <img src="images/logo.png" alt="Logo" class="logo">
+          <h1><a href="index.html">PLUM BAYOU ARCHEOLOGICAL STATE PARK</a></h1>
+          <h2>ARKANSAS STATE PARKS</h2>
+        </div>
+        <nav role="navigation">
+          <ul>
+            <li><a href="https://www.arkansasstateparks.com/parks/plum-bayou-mounds-archeological-state-park">Original Site</a></li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Plum_Bayou_Mounds_Archeological_State_Park"
+                >Wikipedia</a
+              >
+            </li>
+            <li><a href="https://www.arkansasstateparks.com/">Arkansas State Parks</a></li>
+          </ul>
+        </nav>
       </header>
-      <p>The Plum Bayou Mounds in Arkansas were built by the Plum Bayou culture around 1,000 years ago and provide fascinating insights into ancient Native American civilizations. They consist of earthen mounds and ceremonial structures, offering a glimpse into their social and ceremonial practices.
-      </p>
-      <footer class="post-meta"> Posted by <a href="#">Puypuy The Hampter</a></footer>
-    </article>
-    <article class="post">
-      <header>
-        <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Toltec_Mounds_Archeological_Site_Overview_HRoe_2013.jpg" alt="Placeholder&nbsp;" />
-          <figcaption>Artist's conception of the archeological site.</figcaption>
-        </figure>
-        <h2> <a href="#" rel="bookmark" title="link to this post">Activities</a> </h2>
-      </header>
-      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-      </p>
-      <footer class="post-meta"> Posted by <a href="#">Hammy The Hampter</a></footer>
-    </article>
-    <article class="post">
-      <header>
-        <figure>
-          <img src="https://res.cloudinary.com/miles-extranet-dev/image/upload/w_800,h_480,c_fill,q_60/ArkansasSP/account_photos/48/45c3aebea5799317e6c1001a2f9aa5c4_Toltec_Mounds_State_Park02" alt="Placeholder" />
-          <figcaption>Tour guides leading the tourists</figcaption>
-        </figure>
-        <h2> <a href="#" rel="bookmark" title="link to this post">FAQs</a> </h2>
-      </header>
-      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-      </p>
-      <footer class="post-meta"> Posted by <a href="#">Brushy The Hampter</a></footer>
-    </article>
-  </section>
-  <aside role="complementary">
-    <div class="container">
-      <article class="widget">
-        <header>
-          <h2>Sample Sidebar Item </h2>
-        </header>
-        <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
-          Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
-        <footer>Widget Footer</footer>
-      </article>
-      <article class="widget">
-        <header>
-          <h2>Sample Sidebar Item </h2>
-        </header>
-        <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
-          Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
-        <footer>Widget Footer</footer>
-      </article>
-    </div>
-  </aside>
-  <footer id="colophon" role="contentinfo">
-    <h6>&copy; 2024 Auriel Del Carmen <a href="#top">Back to Top</h6>
-    
-  </footer>
-</body>
-
+      <section id="content" class="container">
+        <h2>What to know</h2>
+        <p>
+          Formerly Toltec Mounds Archeological State Park, Plum Bayou is one of four National Historic Landmarks in the Arkansas State Park system. This park interprets the largest and most complex mound site in the state. It also offers the rare opportunity to see archeological research at work. This site was a ceremonial ground for prehistoric Native Americans and stands today as an important and fascinating piece of history. A popular field trip destination for local schools, the park recommends that requests for guided tours be made well in advance. Located 4 miles from Scott, a short and beautiful drive from Little Rock.
+        </p>
+      
+      </section>
+      <section id="blog" class="container">
+        <h2>Recent Posts</h2>
+        <article class="post">
+          <figure>
+            <img src="https://res.cloudinary.com/miles-extranet-dev/image/upload/w_800,h_480,c_fill,q_60/ArkansasSP/account_photos/48/fc758cc7e945851de823bafe09a7970c_Toltec_SP_Aerial_102015_ACH_0928_crop" alt="Placeholder" />
+            <figcaption>Aerial View of the Plum Bayou Mounds</figcaption>
+          </figure>
+          <header>
+            <time class="post-date" datetime="2024-02-22">February 22, 2024</time>
+            <h2>
+              <a href="#" rel="bookmark" title="link to this post"
+                >HISTORY</a
+              >
+            </h2>
+          </header>
+          <div class="post-content">
+            <p>
+              The Plum Bayou Mounds in Arkansas were built by the Plum Bayou culture around 1,000 years ago and provide fascinating insights into ancient Native American civilizations. They consist of earthen mounds and ceremonial structures, offering a glimpse into their social and ceremonial practices.
+            </p>
+          </div>
+          <footer class="post-meta">
+            Posted by <a href="#">Puypuy The Hamster</a>
+          </footer>
+        </article>
+        <article class="post">
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Toltec_Mounds_Archeological_Site_Overview_HRoe_2013.jpg" alt="Placeholder" />
+            <figcaption>Artist's conception of the Plum Bayou Mounds</figcaption>
+          </figure>
+          <header>
+            <time class="post-date" datetime="2024-02-22">February 22, 2024</time>
+            <h2>
+              <a href="#" rel="bookmark" title="link to this post"
+                >ACTIVITIES</a
+              >
+            </h2>
+          </header>
+          <div class="post-content">
+            <p> Walk around. Do some touring stuff. Learn History. Excavate ancient goodies!
+            
+            </p>
+          </div>
+          <footer class="post-meta">
+            Posted by <a href="#">Hammy The Hamster</a>
+          </footer>
+        </article>
+        <article class="post">
+          <figure>
+            <img src="https://res.cloudinary.com/miles-extranet-dev/image/upload/w_800,h_480,c_fill,q_60/ArkansasSP/account_photos/48/45c3aebea5799317e6c1001a2f9aa5c4_Toltec_Mounds_State_Park02" alt="Placeholder" />
+            <figcaption>Tour guide walking with the tourists.</figcaption>
+          </figure>
+          <header>
+            <time class="post-date" datetime="2024-02-22">February 22, 2024</time>
+            <h2>
+              <a href="#" rel="bookmark" title="link to this post"
+                >FAQS</a
+              >
+            </h2>
+          </header>
+          <div class="post-content">
+            <p>
+              Who made this?
+              How did they build it?
+              How old is it?
+              Why did they build it?
+            </p>
+          </div>
+          <footer class="post-meta">
+            Posted by <a href="#">Brushy The Hamster</a>
+          </footer>
+        </article>
+      </section>
+      <aside role="complementary">
+        <div class="container">
+          <article class="widget">
+            <header>
+              <h2>Sample Sidebar Item</h2>
+            </header>
+            <p>
+              Quisque justo erat, varius placerat fermentum vel, iaculis vel
+              ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque
+              vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut
+              risus pulvinar at fringilla sem tristique. Nulla facilisi. Donec
+              posuere euismod purus, eu scelerisque risus pellentesque eu.
+              Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a>
+            </p>
+           
+            <footer>Widget Footer</footer>
+            
+          </article>
+          <article class="widget">
+            <header>
+              <h2>Sample Sidebar Item</h2>
+            </header>
+            <p>
+              Quisque justo erat, varius placerat fermentum vel, iaculis vel
+              ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque
+              vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut
+              risus pulvinar at fringilla sem tristique. Nulla facilisi. Donec
+              posuere euismod purus, eu scelerisque risus pellentesque eu.
+              Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a>
+            </p>
+            <footer>Widget Footer</footer>
+          </article>
+        </div>
+      </aside>
+      <footer id="colophon" role="contentinfo">
+        <h6>&copy; 2024 Auriel Del Carmen <a href="#top">Back to Top</h6>
+      </footer>
+    </main>
+  </body>
 </html>
