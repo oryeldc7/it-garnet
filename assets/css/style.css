@@ -2,48 +2,56 @@
 
 /* Type Selector */
 body {
-  background-color: yellow;
-  font-family: 'Kanit', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* ID Selector */
-#main-heading {
-  color: blue;
-  text-shadow: 1px 1px #000000;
-}
-
-/* Class Selector */
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box; /* Add border box */
-}
-
+    background-color: yellow;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* ID Selector */
+  #main-heading {
+    color: blue;
+    text-shadow: 1px 1px #000000;
+  }
+  
+  /* Class Selector */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box; /* Add border box */
+    padding: 10px;
+  }
+  
+  /* Logo styles */
 /* Logo styles */
 .logo {
-  width: 100px;
-  margin: 20px auto;
+  width: 250px; /* Change this value to adjust the size of the logo */
+  margin: 20px ;
 }
 
-/* Navigation list styles */
-.primary {
-  border: 2px solid #000000;
-  padding: 10px;
-  box-sizing: border-box; /* Add border box */
-}
-
-.primary ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-
-/* Navigation list item styles */
-.primary ul li {
-  margin-bottom: 10px;
-}
+  
+  /* Navigation list styles */
+  .primary {
+    border: 2px solid #000000;
+    padding: 10px;
+    box-sizing: border-box; /* Add border box */
+  }
+  
+  .primary ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Navigation list item styles */
+  .primary ul li {
+    margin-bottom: 10px;
+  }
+  
+  #colophon {
+    text-align: center;
+  }
+  
