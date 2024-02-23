@@ -163,17 +163,25 @@ aside .widget:first-of-type {
     padding-right: 20px;
 }
 
-#colophone {
+#colophon {
     text-align: center;
-    background-image: url("https://assets.codepen.io/7248/bg_1.png");
+    background-image: url("https://puypuy3.files.wordpress.com/2023/08/flag-of-the-mreh-2023.png?w=900");
     padding: 20px;
     color: #ffffff;
-}
-
+    line-height: 1;
+  }
+  
+  #colophon h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+  }
+   
 header.primary .hgroup .logo {
     width: 200px;
     height: 200px;
-    float: right;
-    margin-right: -350px; 
-    margin-top: 200px; 
+    position: absolute;
+    right: 10px; /* Adjust this value to your preference */
+    top: 10px; /* Adjust this value to your preference */
 }
+
