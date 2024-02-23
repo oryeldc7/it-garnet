@@ -1,29 +1,49 @@
 /* -------- Course Homepage Stylesheet --------- */
 
-
 /* Type Selector */
-body{
-    background-color:yellow;
-    font-family: 'Kanit', sans-serif;
+body {
+  background-color: yellow;
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ID Selector */
-
-#main-heading{
-    color:blue;
-    text-shadow: 1px 1px #000000;
+#main-heading {
+  color: blue;
+  text-shadow: 1px 1px #000000;
 }
-
 
 /* Class Selector */
-
-.primary{
-    border: 2px solid #000000;
-    padding: 10px;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box; /* Add border box */
 }
 
-/* --- psuedo selector --- */
+/* Logo styles */
+.logo {
+  width: 100px;
+  margin: 20px auto;
+}
 
-a:link, a:visited{
- color:purple;
+/* Navigation list styles */
+.primary {
+  border: 2px solid #000000;
+  padding: 10px;
+  box-sizing: border-box; /* Add border box */
+}
+
+.primary ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+/* Navigation list item styles */
+.primary ul li {
+  margin-bottom: 10px;
 }
