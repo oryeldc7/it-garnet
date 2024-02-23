@@ -28,7 +28,7 @@ body {
   /* Logo styles */
 /* Logo styles */
 .logo {
-  width: 250px; /* Change this value to adjust the size of the logo */
+  width: 500px; /* Change this value to adjust the size of the logo */
   margin: 20px ;
 }
 
@@ -53,5 +53,11 @@ body {
   
   #colophon {
     text-align: center;
+  }
+
+  #colophon h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
   }
   
