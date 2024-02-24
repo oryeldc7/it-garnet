@@ -28,8 +28,16 @@ body {
   /* Logo styles */
 /* Logo styles */
 .logo {
-  width: 500px; /* Change this value to adjust the size of the logo */
-  margin: 20px ;
+  width: 500px; 
+  margin: 2.3px ;
+}
+
+#UALR-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px; 
+  height: auto;
 }
 
   
