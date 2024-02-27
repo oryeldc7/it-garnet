@@ -11,7 +11,7 @@ html {
 
 body{
   font-family: 'Lato', sans-serif;
-  background:#1f9c2a;
+  background:yellow;
   padding:20px;
 }
 
@@ -25,7 +25,7 @@ header h1{
 
 section[id]{
   border:6px solid rgba(0,0,0,.4);
-  background:#fff;
+  background:green;
   border-radius:12px;
   margin:40px auto;
   padding:20px;
