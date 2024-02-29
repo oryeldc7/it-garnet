@@ -53,7 +53,8 @@ header.primary {
 }
 
 header.primary .hgroup {
-    width: 70%;
+    width: 60%;
+    margin-left: 20px; /* Adjust the value to move the title to the right */
 }
 
 .hgroup h1, .hgroup hw {
@@ -64,7 +65,7 @@ header.primary .hgroup h1 a {
     color: rgb(35, 78, 35);
     text-decoration: none;
     text-shadow: 1px 1px yellowgreen;
-    font-size: 3.1rem;
+    font-size: 2.9rem;
 }
 
 header.primary .hgroup h2 {
@@ -88,6 +89,21 @@ header.primary nav ul li {
     margin-bottom: 10px;
 }
 
+
+/* Add the following rules to your CSS file */
+
+header.primary nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Change display to flex */
+}
+
+header.primary nav ul li {
+    margin-bottom: 10px;
+    display: inline-flex; /* Change display to inline-flex */
+}
+
 header.primary nav a {
     color: lightgreen;
     text-decoration: none;
@@ -98,6 +114,7 @@ header.primary nav a {
     border: 1px solid gold;
     border-right: 11px solid gold;
     text-align: right;
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 #content h2, #content h3 {
@@ -181,7 +198,7 @@ header.primary .hgroup .logo {
     width: 200px;
     height: 200px;
     position: absolute;
-    right: 10px; /* Adjust this value to your preference */
-    top: 10px; /* Adjust this value to your preference */
+    left: 0;
+    top: 0;
 }
 
