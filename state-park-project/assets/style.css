@@ -32,7 +32,7 @@ img {
 
 body {
     font-family: 'Carter One', monospace;
-    background-image: darkseagreen;
+    background-color: darkseagreen;
 }
 
 main {
@@ -77,7 +77,8 @@ header.primary {
 
 header.primary .hgroup {
     width: 60%;
-    margin-left: 20px; 
+    margin-left: 20px; /* Adjust the value to move the title to the right */
+}
 
 .hgroup h1, .hgroup hw {
     margin: 0;
@@ -255,3 +256,6 @@ header.primary .hgroup .logo {
     max-width: 100%;
   }
 }
+
+
+
