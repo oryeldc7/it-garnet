@@ -32,7 +32,7 @@ img {
 
 body {
     font-family: 'Carter One', monospace;
-    background-color: darkseagreen;
+    background-image: darkseagreen;
 }
 
 main {
@@ -56,14 +56,14 @@ main {
     text-align: center;
 }
 
-/* Set background color for the first widget */
+
 aside .fun-facts:nth-child(1) {
-    background-color: gold; /* Example color */
+    background-color: gold; 
 }
 
-/* Set background color for the second widget */
+
 aside .fun-facts:nth-child(2) {
-    background-color: goldenrod; /* Example color */
+    background-color: goldenrod; 
 }
 
 
@@ -77,8 +77,7 @@ header.primary {
 
 header.primary .hgroup {
     width: 60%;
-    margin-left: 20px; /* Adjust the value to move the title to the right */
-}
+    margin-left: 20px; 
 
 .hgroup h1, .hgroup hw {
     margin: 0;
