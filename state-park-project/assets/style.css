@@ -44,6 +44,29 @@ main {
     border-radius: 4px;
 }
 
+.statepark-link {
+    color: yellowgreen;
+}
+
+.top-link {
+    color: white;
+}
+
+.centered-section {
+    text-align: center;
+}
+
+/* Set background color for the first widget */
+aside .fun-facts:nth-child(1) {
+    background-color: gold; /* Example color */
+}
+
+/* Set background color for the second widget */
+aside .fun-facts:nth-child(2) {
+    background-color: goldenrod; /* Example color */
+}
+
+
 header.primary {
     background-color: #60967e;
     background-image: url("../images/IMG_20240208_114214819_HDR-EDIT.jpg"), url("../images/IMG_20240208_111823989_HDR.jpg");
@@ -80,7 +103,7 @@ header.primary nav {
     margin: 0;
 }
 
-header.priamry nav ul {
+header.primary nav ul {
     list-style-type: none;
     margin: 0;
 }
@@ -88,9 +111,6 @@ header.priamry nav ul {
 header.primary nav ul li {
     margin-bottom: 10px;
 }
-
-
-
 
 header.primary nav ul {
     list-style-type: none;
