@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Currency History" content="Currency, conversions">
+    <title>Currency Value History</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/scripts/chart.js"></script>
+</head>
+<body>
+
+<h1>Currency Value History</h1>
+
+<form id="myform">
+    <div class="formcontainer">
+        <label for="baseCurrency" class="formlabel">Base Currency:</label>
+        <input list="baseCurrencyList" placeholder="Select a Currency..." id="baseCurrency" name="baseCurrency" required>
+        <datalist id="baseCurrencyList">
+            <option value="USD">United States Dollar</option>
+            <option value="CAD">Canadian Dollar</option>
+            <option value="PHP">Philippine Peso</option>
+            <option value="EUR">Euro</option>
+            <option value="AUD">Australian Dollar</option>
+        </datalist>
+        <label class="error" for="baseCurrency" id="baseCurrencyError"></label><br>
+
+        <label for="toCurrency" class="formlabel">Convert to Currency:</label>
+        <input list="toCurrencyList" placeholder="Select a Currency..." id="toCurrency" name="toCurrency" required>
+        <datalist id="toCurrencyList">
+            <option value="USD">United States Dollar</option>
+            <option value="CAD">Canadian Dollar</option>
+            <option value="PHP">Philippine Peso</option>
+            <option value="EUR">Euro</option>
+            <option value="AUD">Australian Dollar</option>
+        </datalist>
+        <label class="error" for="toCurrency" id="toCurrencyError"></label><br>
+
+        <label class="formlabel">From Date:</label>
+        <input type="date" name="FromDate" id="FromDate" required>
+        <label id="FromDateError" for="FromDate" class="error"></label><br>
+
+        <label class="formlabel">To Date:</label>
+        <input type="date" name="ToDate" id="ToDate" required>
+        <label id="ToDateError" for="ToDate" class="error"></label><br><br>
+
+        <input type="button" value="Show Results" id="showResults" name="showResults">
+        <input type="button" value="Clear" id="clear" name="clear"><hr><br>
+
+        <div class="clearfix">
+            <div class="img-container">
+                <canvas id="chartjs-0" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
