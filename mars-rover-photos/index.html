@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mars Rover Photos Explorer" content="mars-rover-photos">
+    <title>Mars Rover Photo Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Mars Rover Photo Explorer</h1>
+    
+    <div>
+        <label for="rover1"><input type="radio" name="rover" id="rover1" value="Curiosity" onchange="updateDate()"> Curiosity</label>
+        <label for="rover2"><input type="radio" name="rover" id="rover2" value="Opportunity" onchange="updateDate()"> Opportunity</label>
+        <label for="rover3"><input type="radio" name="rover" id="rover3" value="Spirit" onchange="updateDate()"> Spirit</label>
+    </div>
+
+    <div>
+        <label for="date">Select a date:</label>
+        <input type="date" id="date">
+        <button id="getPhotosBtn">Submit</button>
+        <button id="clearBtn">Clear</button>
+    </div>
+
+    <div id="error-message" style="color: red;"></div>
+
+    <div id="photos"></div>
+
+    <script src="rover.js"></script>
+</body>
+</html>
