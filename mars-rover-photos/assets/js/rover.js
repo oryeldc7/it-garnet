@@ -2,8 +2,8 @@ function updateDate() {
     // Update photo date based on selected rover
     const rovers = {
         Curiosity: { start: '2012-08-06', end: '2019-09-28' },
-        Opportunity: { start: '2004-01-25', end: '2019-02-13' },
-        Spirit: { start: '2004-01-04', end: '2010-03-22' }
+        Opportunity: { start: '2004-01-26', end: '2018-06-11' },
+        Spirit: { start: '2004-01-05', end: '2004-03-21' }
     };
     const selectedRover = document.querySelector('input[name="rover"]:checked');
     if (selectedRover) {
@@ -27,14 +27,19 @@ function fetchPhotos() {
     }
 
     // Make AJAX call to fetch photos
-    const apiKey = 'kcnV2ULZ9cf9dgPJcH2KYIhseDYg3jSVLc9I6eg2';
+    const apiKey = 'Ob1kYwJSt0FD48OjdaWz5upsPpTCCSGiCQvf2rj1';
     const apiUrl = `https://api.nasa.gov/mars-photos/api/v1/rovers/${selectedRover.value}/photos?earth_date=${selectedDate}&api_key=${apiKey}`;
     
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
             document.getElementById('error-message').textContent = '';
-            displayPhotos(data.photos);
+            if(data.photos.length === 0) {
+                document.getElementById('error-message').textContent = 'No photos available for the selected date.';
+            } else {
+                const first25Photos = data.photos.slice(0, 25);
+                displayPhotos(first25Photos);
+            }
         })
         .catch(error => console.error('Error fetching photos:', error));
 }
@@ -43,12 +48,14 @@ function displayPhotos(photos) {
     const photoContainer = document.getElementById('photos');
     photoContainer.innerHTML = '';
 
-    photos.slice(0, 25).forEach((photo, index) => {
-        const img = document.createElement('img');
-        img.src = photo.img_src;
-        img.alt = `Photo ${index + 1}`;
-        img.title = photo.camera.full_name;
-        photoContainer.appendChild(img);
+    photos.forEach((photo, index) => {
+        if (index < 25) {
+            const img = document.createElement('img');
+            img.src = photo.img_src;
+            img.alt = `Photo ${index + 1}`;
+            img.title = photo.camera ? photo.camera.full_name : "Camera information not available";
+            photoContainer.appendChild(img);
+        }
     });
 
     const photoCount = document.createElement('p');

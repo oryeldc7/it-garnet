@@ -2,30 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Mars Rover Photos Explorer" content="mars-rover-photos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mars Rover Photo Explorer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Mars Rover Photo Explorer</h1>
-    
-    <div>
-        <label for="rover1"><input type="radio" name="rover" id="rover1" value="Curiosity" onchange="updateDate()"> Curiosity</label>
-        <label for="rover2"><input type="radio" name="rover" id="rover2" value="Opportunity" onchange="updateDate()"> Opportunity</label>
-        <label for="rover3"><input type="radio" name="rover" id="rover3" value="Spirit" onchange="updateDate()"> Spirit</label>
+    <div class="container">
+        <h1>Mars Rover Photo Explorer</h1>
+        
+        <div>
+            <label for="rover1"><input type="radio" name="rover" id="rover1" value="Curiosity" onchange="updateDate()"> Curiosity</label>
+            <label for="rover2"><input type="radio" name="rover" id="rover2" value="Opportunity" onchange="updateDate()"> Opportunity</label>
+            <label for="rover3"><input type="radio" name="rover" id="rover3" value="Spirit" onchange="updateDate()"> Spirit</label>
+        </div>
+
+        <table class="rover-dates">
+            <caption>Rover Mission Dates</caption>
+            <thead>
+                <tr>
+                    <th>Rover</th>
+                    <th>Mission Start</th>
+                    <th>Mission End</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="rover">
+                    <td>Curiosity</td>
+                    <td>08/06/2012</td>
+                    <td>09/28/2019</td>
+                </tr>
+                <tr class="rover">
+                    <td>Opportunity</td>
+                    <td>01/26/2004</td>
+                    <td>06/11/2018</td>
+                </tr>
+                <tr class="rover">
+                    <td>Spirit</td>
+                    <td>01/05/2004</td>
+                    <td>03/21/2004</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <label for="date">Select a date:</label>
+            <input type="date" id="date">
+            <button id="getPhotosBtn">Get Photos</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+
+        <div id="error-message" style="color: red;"></div>
+
+        <div id="photos"></div>
     </div>
 
-    <div>
-        <label for="date">Select a date:</label>
-        <input type="date" id="date">
-        <button id="getPhotosBtn">Submit</button>
-        <button id="clearBtn">Clear</button>
-    </div>
-
-    <div id="error-message" style="color: red;"></div>
-
-    <div id="photos"></div>
-
-    <script src="rover.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
