@@ -13,13 +13,15 @@ th {
     color: red;
 }
 
-img {
+div.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-auto-rows: minmax(100px, auto); /* Adjust row height as needed */
+    gap: 1rem;
+  }
+  
+  img {
     width: 100%;
     height: auto;
   }
   
-  div.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-  }
