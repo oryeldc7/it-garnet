@@ -18,11 +18,11 @@ function fetchPhotos() {
     const selectedDate = document.getElementById('date').value;
 
     if (!selectedRover) {
-        document.getElementById('error-message').textContent = 'Please select a rover.';
+        document.getElementById('error-message').textContent = 'A Rover is Required.';
         return;
     }
     if (!selectedDate) {
-        document.getElementById('error-message').textContent = 'Please select a date.';
+        document.getElementById('error-message').textContent = 'A Date is Required.';
         return;
     }
 
@@ -46,6 +46,7 @@ function fetchPhotos() {
 
 function displayPhotos(photos) {
     const photoContainer = document.getElementById('photos');
+    const numResults = document.getElementById('numResults');
     photoContainer.innerHTML = '';
 
     photos.forEach((photo, index) => {
@@ -54,18 +55,21 @@ function displayPhotos(photos) {
             img.src = photo.img_src;
             img.alt = `Photo ${index + 1}`;
             img.title = photo.camera ? photo.camera.full_name : "Camera information not available";
-            photoContainer.appendChild(img);
+            const a = document.createElement('a');
+            a.href = '';
+            a.id = `a${index}`;
+            a.appendChild(img);
+            photoContainer.appendChild(a);
         }
     });
 
-    const photoCount = document.createElement('p');
-    photoCount.textContent = `Number of photos found: ${photos.length}`;
-    photoContainer.appendChild(photoCount);
+    numResults.textContent = `Number of photos found: ${photos.length}`;
 }
 
 function clearMessages() {
     document.getElementById('error-message').textContent = '';
 }
+
 
 document.getElementById('getPhotosBtn').addEventListener('click', fetchPhotos);
 document.getElementById('clearBtn').addEventListener('click', clearMessages);

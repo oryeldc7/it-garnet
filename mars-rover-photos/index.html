@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Auriel Del Carmen">
     <title>Mars Rover Photo Explorer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Mars Rover Photo Explorer</h1>
         
-        <div>
-            <label for="rover1"><input type="radio" name="rover" id="rover1" value="Curiosity" onchange="updateDate()"> Curiosity</label>
-            <label for="rover2"><input type="radio" name="rover" id="rover2" value="Opportunity" onchange="updateDate()"> Opportunity</label>
-            <label for="rover3"><input type="radio" name="rover" id="rover3" value="Spirit" onchange="updateDate()"> Spirit</label>
-        </div>
-
         <table class="rover-dates">
-            <caption>Rover Mission Dates</caption>
             <thead>
                 <tr>
                     <th>Rover</th>
@@ -44,18 +41,56 @@
             </tbody>
         </table>
 
+        <h1>Select a Rover and a Picture Date:</h1>
+
         <div>
-            <label for="date">Select a date:</label>
+            <label for="date">Rover:</label>
+            <label for="rover1"><input type="radio" name="rover" id="rover1" value="Curiosity" onchange="updateDate()"> Curiosity</label>
+            <label for="rover2"><input type="radio" name="rover" id="rover2" value="Opportunity" onchange="updateDate()"> Opportunity</label>
+            <label for="rover3"><input type="radio" name="rover" id="rover3" value="Spirit" onchange="updateDate()"> Spirit</label>
+        </div>
+
+        <div id="error-message"></div>
+
+        <div>
+            <label for="date">Picture date:</label>
             <input type="date" id="date">
             <button id="getPhotosBtn">Get Photos</button>
             <button id="clearBtn">Clear</button>
         </div>
 
-        <div id="error-message" style="color: red;"></div>
+        <div id="error-message"></div>
 
-        <div id="photos"></div>
+
+        <div id="photos" class="gallery">
+            <a id="a0" href=""><img id="img0" src="" onclick="showFull()" /></a>
+            <a id="a1" href=""><img id="img1" src="" onclick="showFull()" /></a>
+            <a id="a2" href=""><img id="img2" src="" onclick="showFull()" /></a>
+            <a id="a3" href=""><img id="img3" src="" onclick="showFull()" /></a>
+            <a id="a4" href=""><img id="img4" src="" onclick="showFull()" /></a>
+            <a id="a5" href=""><img id="img5" src="" onclick="showFull()" /></a>
+            <a id="a6" href=""><img id="img6" src="" onclick="showFull()" /></a>
+            <a id="a7" href=""><img id="img7" src="" onclick="showFull()" /></a>
+            <a id="a8" href=""><img id="img8" src="" onclick="showFull()" /></a>
+            <a id="a9" href=""><img id="img9" src="" onclick="showFull()" /></a>
+            <a id="a10" href=""><img id="img10" src="" onclick="showFull()" /></a>
+            <a id="a11" href=""><img id="img11" src="" onclick="showFull()" /></a>
+            <a id="a12" href=""><img id="img12" src="" onclick="showFull()" /></a>
+            <a id="a13" href=""><img id="img13" src="" onclick="showFull()" /></a>
+            <a id="a14" href=""><img id="img14" src="" onclick="showFull()" /></a>
+            <a id="a15" href=""><img id="img15" src="" onclick="showFull()" /></a>
+            <a id="a16" href=""><img id="img16" src="" onclick="showFull()" /></a>
+            <a id="a17" href=""><img id="img17" src="" onclick="showFull()" /></a>
+            <a id="a18" href=""><img id="img18" src="" onclick="showFull()" /></a>
+            <a id="a19" href=""><img id="img19" src="" onclick="showFull()" /></a>
+            <a id="a20" href=""><img id="img20" src="" onclick="showFull()" /></a>
+            <a id="a21" href=""><img id="img21" src="" onclick="showFull()" /></a>
+            <a id="a22" href=""><img id="img22" src="" onclick="showFull()" /></a>
+            <a id="a23" href=""><img id="img23" src="" onclick="showFull()" /></a>
+            <a id="a24" href=""><img id="img24" src="" onclick="showFull()" /></a>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="assets/js/rover.js"></script>
 </body>
 </html>
