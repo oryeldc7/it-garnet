@@ -15,6 +15,12 @@ body {
     text-shadow: 1px 1px #000000;
   }
   
+  #second-heading {
+    color: blue;
+    text-shadow: 1px 1px #000000;
+    margin-bottom: auto;
+  }
+
   /* Class Selector */
   .header {
     display: flex;
@@ -40,7 +46,17 @@ body {
   height: auto;
 }
 
-  
+.indented-paragraph {
+  text-indent: 5em;
+  color: darkslateblue; /* Apply color to the parent container */
+  margin: 50px;
+}
+
+.indented-paragraph p,
+.indented-paragraph h3 {
+  color: inherit; /* Inherit color from the parent */
+}
+ 
   /* Navigation list styles */
   .primary {
     border: 2px solid blue;
@@ -102,4 +118,5 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 
