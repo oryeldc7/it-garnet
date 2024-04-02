@@ -1,0 +1,45 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+    margin-bottom: 30px; /* Added margin-bottom */
+}
+
+.content p {
+    margin-bottom: 20px; /* Added margin-bottom for paragraphs */
+}
+
+.bibliography {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bibliography h2 {
+    margin-top: 30px; /* Added margin-top for the sources heading */
+}
+
+.bibliography-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bibliography-list li {
+    margin-bottom: 10px;
+}
