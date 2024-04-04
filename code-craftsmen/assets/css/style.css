@@ -1,14 +1,17 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 00;
+    font-style: normal;
+    background-color: #D4D4AD;
     margin: 0;
     padding: 0;
 }
 
 .header {
-    background-color: #333;
+    background-color: #DCBC34;
     color: #fff;
     padding: 20px;
     text-align: center;
