@@ -1,0 +1,572 @@
+/*Fonts
+
+.fira-sans-thin {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.fira-sans-extralight {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.fira-sans-light {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-sans-semibold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fira-sans-extrabold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.fira-sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fira-sans-thin-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.fira-sans-extralight-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.fira-sans-light-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.fira-sans-regular-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fira-sans-medium-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fira-sans-semibold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fira-sans-bold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fira-sans-extrabold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.fira-sans-black-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.container {
+  margin: auto;
+  padding: 40px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  max-width: 100%;
+  background-color: #d4d4ad;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23dbdbba' fill-opacity='0.48' fill-rule='evenodd'/%3E%3C/svg%3E");  font-style: normal;
+}
+a {
+  color: white;
+}
+
+.navbar {
+  padding: 0%;
+}
+
+.bg-transparent {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+}
+
+.container-fluid {
+  max-height: 70px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mainnavbar {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.nav-link {
+  color: white;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.brandlogo {
+  margin-top: 150px;
+  margin-left: 70px;
+}
+
+#topcontent {
+  background-image: url(../resources/img/homepage_header_img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+
+.description {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.description2 {
+  max-width: 700px;
+  margin: auto;
+}
+
+.destop {
+  text-align: right;
+  margin-right: 0%;
+}
+
+.desbottom {
+  margin-left: 0%;
+}
+
+#desbottomimg {
+  display: block;
+  margin: auto;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+
+#mbanner {
+  color: white;
+  color: #fff;
+  padding: 10px 20px;
+}
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.carousel-item {
+  height: 90vh;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 90vh;
+}
+
+#banner {
+  color: #566c2b;
+  padding: 20px;
+  text-align: center;
+  width: 70vw;
+  margin: auto;
+  margin-top: -30px;
+  border-radius: 10px;
+}
+
+#overview {
+  text-align: left;
+  width: fit-content;
+  height: fit-content;
+  width: 90vw;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#overview h2 {
+  text-align: center;
+}
+
+.containterbuttons {
+  width: 90vw;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.buttonhp {
+  color: white;
+  background-color: #e8dc4f;
+  text-align: center;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+  width: 300px;
+  height: 150px;
+  display: grid;
+  align-items: center;
+  font-size: 40px;
+  text-decoration: underline;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+#bh1 {
+  background-image: url(../resources/img/rentalsbtn.jpg);
+  background-size: cover;
+}
+
+#bh2 {
+  background-image: url(../resources/img/levelbtn.jpg);
+  background-size: cover;
+}
+
+#bh3 {
+  background-image: url(../resources/img/cabinbtn.jpg);
+  background-size: cover;
+}
+
+#bh4 {
+  background-image: url(../resources/img/overview.jpg);
+  background-size: cover;
+}
+
+#bh5 {
+  background-image: url(../resources/img/historybtn.jpg);
+  background-size: cover;
+}
+
+#bh6 {
+  background-image: url(../resources/img/aboutbtn.jpg);
+  background-size: cover;
+}
+
+#banner2 {
+  background-color: #566c2b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 90vw;
+  margin: auto;
+  margin-top: 70px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 50rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+#carouselwrapper {
+  background-color: grey;
+  width: 90vw;
+  margin: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+#carousel {
+  width: fit-content;
+  height: fit-content;
+  background-color: grey;
+  width: 90vw;
+  margin: auto;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  max-width: 900px;
+}
+
+#carousel h2 {
+  text-align: center;
+}
+
+.carousel-item {
+  max-height: 500px;
+  max-width: 900px;
+}
+
+footer {
+  background-color: #566c2b;
+  padding: 20px;
+  margin-top: 40px;
+  height: 300px;
+  color: white;
+}
+
+#brandimg {
+  float: right;
+  margin-right: 25px;
+}
+
+.brandimgpark {
+  max-height: 150px;
+  max-width: auto;
+  margin-top: -50px;
+}
+
+#mapfooter {
+  margin-top: -80px;
+}
+
+#footernav {
+  text-align: center;
+}
+
+footer a {
+  margin: 5px;
+  text-decoration: underline;
+  color: white;
+}
+
+#footercopy {
+  background-color: #566c2b;
+  text-align: center;
+}
+
+#footercopy a {
+  margin-left: 5px;
+  color: white;
+}
+
+#footercopy p {
+  margin: 0%;
+  color: white;
+}
+
+.weatherWidget {
+  min-width: 350px;
+  max-width: 730px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right:15px;
+}
+
+.destoph2 {
+  text-align: right;
+}
+
+#featurettetop {
+  margin: auto;
+ 
+}
+
+.featurette{
+  max-width: 1500px;
+  margin: auto;
+}
+
+svg{
+  max-width: 1200px;
+  min-width: 200px;
+  margin:auto;
+  margin-top: 50px;
+}
+
+#mbanner{
+  position: absolute;
+  margin: 0%;
+  bottom: 0%;
+  right:0%;
+  width: 50%;
+  height: auto;
+  min-width: 350px;
+}
+
+.wufooform{
+  margin-bottom: 300px;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1370px) {
+  .mapfooter {
+    width: 300px;
+    height: 190px;
+  }
+
+ 
+
+  .brandlogo {
+    width: 200px;
+    height: 200px;
+    margin-top:120px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .mapfooter {
+    width: 230px;
+    height: 200px;
+  }
+
+  
+}
+
+@media screen and (max-width: 930px) {
+
+  #mapfooter{
+    display: none;
+  }
+
+  #brand{
+   display:none;
+  }
+
+  .nav-link {
+    font-size: 17px;
+  }
+
+  .brandlogo {
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 80px;
+  }
+
+  footer{
+    height:150px;
+  }
+  
+}
+
+@media screen and (max-width: 840px) {
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 795px) {
+
+  .nav-link {
+    font-size: 15px;
+    
+  }
+
+  .brandlogo {
+    width: 130px;
+    height: 130px;
+    margin-left: 30px;
+    margin-top: 60px;
+  }
+
+}
+
+@media screen and (max-width: 770px) {
+  .brandlogo {
+    margin: auto;
+    width: 120px;
+    height: 120px;
+  }
+
+  .container-fluid {
+    max-height: fit-content;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+ 
+  #mbanner{
+    min-width: 200px;
+    margin-right: 20px;
+  }
+
+}
+
+

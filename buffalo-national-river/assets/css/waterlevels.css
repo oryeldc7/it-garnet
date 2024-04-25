@@ -1,0 +1,100 @@
+/*Add this to all the pages css EXCEPT the homepage*/
+#topcontent{
+    background-image: none;
+    height: 25vh;
+}
+
+.container-fluid{
+    background-color: #566c2b;
+   
+}
+.navbar{
+    padding: 0%;
+}
+
+#msg{
+    display: none;
+}
+/*header.secondary {
+    background-image: url("../resources/img/waterlevel.jpg");
+    background-size:auto 150%;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    height: 70vh;
+    border-bottom: 10px solid #946c13;
+}*/
+header.secondary h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 100px;
+}
+  #overview{
+    width: fit-content;
+    height: fit-content;
+    padding:100px;
+    background-color: white;
+  }
+
+ #bh1, #bh2, #bh3, #bh4{
+  background-image: none;
+  margin-top: 50px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+ }
+
+ #bh3, #bh4{
+  margin-bottom: 300px;
+ }
+
+ @media screen and (max-width: 768px) {
+
+    #bh3, #bh4{
+        margin-bottom: 30px;
+       }
+
+       canvas{
+        width:500px;
+        height: 500px;
+       }
+
+       #overview{
+        padding:5px;
+       }
+  }
+
+  @media screen and (max-width: 540px) {
+
+       canvas{
+        width:400px;
+        height: 400px;
+       }
+      
+  }
+ 
+  @media screen and (max-width: 440px) {
+
+    canvas{
+     width:350px;
+     height: 350px;
+    }
+   
+}
+
+@media screen and (max-width: 385px) {
+
+    canvas{
+     width:300px;
+     height: 300px;
+    }
+   
+}
+
+@media screen and (max-width: 330px) {
+
+    canvas{
+     width:250px;
+     height: 240px;
+    }
+   
+}

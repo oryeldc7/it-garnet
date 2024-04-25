@@ -1,0 +1,40 @@
+#topcontent {
+    background-image: none;
+    height: 25vh;
+  }
+
+.container-fluid{
+    background-color: #566c2b;
+   
+}
+.navbar{
+    padding: 0%;
+}
+
+.history {
+  max-width: 1000px;
+  margin: auto;
+}
+.iframe {
+  text-align: center;
+}
+#overview{
+  width: 70vw;
+ 
+}
+
+@media screen and (max-width:660px){
+  .historyp{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:450px){
+  .historyp{
+    font-size: 12px;
+  }
+}
+
+iframe{
+  margin-top:20px;
+}
